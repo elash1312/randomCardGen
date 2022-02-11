@@ -30,11 +30,12 @@ body {
   right: 15px;
   font-size: 80px;
 }
-&.club: top-suit, .club:bottom-suit {
+&.clubs: top-suit, .club:bottom-suit {
   content: "\2663";
 }
 &.hearts: top-suit, .hearts:bottom-suit {
   content: "\2665";
+  color: red;
 }
 &.diamonds: top-suit, .diamonds:bottom-suit {
   content: "\2666";
