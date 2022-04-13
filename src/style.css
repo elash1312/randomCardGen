@@ -1,42 +1,50 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 body {
-  background-color: green;
+  background: green;
+  box-sizing: border-box;
 }
 .card {
-  background-color: white;
-  padding-top: 130px;
-  text-align: center;
-  text-decoration: solid;
   display: inline-block;
   margin: auto;
-  margin-top: 25px;
-  height: 400px;
-  width: 250px;
+  height: 450px;
+  font-size: 90px;
+  width: 300px;
+  padding: 20px;
+  padding-top: 155px;
   border: 1px solid black;
-  border-radius: 9px;
+  border-radius: 5px;
   position: relative;
-  font-size: 105px;
-}
-.top-suit {
-  position: absolute;
-  top: 0px;
-  left: 15px;
-  font-size: 80px;
-  padding-top: 0;
-}
-.bottom-suit {
-  position: absolute;
-  bottom: 1px;
-  right: 15px;
-  font-size: 80px;
-}
-&.clubs: top-suit, .club:bottom-suit {
-  content: "\2663";
-}
-&.hearts: top-suit, .hearts:bottom-suit {
-  content: "\2665";
-  color: red;
-}
-&.diamonds: top-suit, .diamonds:bottom-suit {
-  content: "\2666";
+
+  &:before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 80px;
+  }
+  &:after {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 80px;
+  }
+
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+  }
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: red;
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
+  }
 }
