@@ -30,7 +30,7 @@ let generateRandomNumber = () => {
 };
 
 let generateRandomSuit = () => {
-  let suit = ["diamond", "spade", "heart", "club"];
+  let suit = ["♦", "♠", "♥", "♣"];
   let indexSuit = Math.floor(Math.random() * suit.length);
   return suit[indexSuit];
 };
