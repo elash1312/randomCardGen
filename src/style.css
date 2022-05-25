@@ -29,21 +29,15 @@ body {
   font-size: 80px;
 }
 
-/* &.spade:bottom,
-  &.spade:after {
-    content: "\2660";
-  }
-  &.club:before,
-  &.club:after {
-    content: "\2663";
-  }
-  &.heart:before,
-  &.heart:after {
-    content: "\2665";
-    color: red;
-  }
-  &.diamond:before,
-  &.diamond:after {
-    content: "\2666";
-    color: red;
-  } */
+.spades {
+  content: "\2660";
+}
+.clubs {
+  content: "\2663";
+}
+.hearts {
+  content: "\2665";
+}
+.diamonds {
+  content: "\2666";
+}

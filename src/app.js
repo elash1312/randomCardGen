@@ -26,11 +26,13 @@ let generateRandomNumber = () => {
     "K"
   ];
   let indexNumbers = Math.floor(Math.random() * numbers.length);
+
   return numbers[indexNumbers];
 };
 
 let generateRandomSuit = () => {
-  let suit = ["♦", "♠", "♥", "♣"];
+  let suit = ["diamonds", "spades", "hearts", "clubs"];
   let indexSuit = Math.floor(Math.random() * suit.length);
+
   return suit[indexSuit];
 };
